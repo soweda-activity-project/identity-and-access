@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6fd1cc-a9cb-4cb8-9244-191dbc23103f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/GroupMember.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/GroupPlayingRoleInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/UserPlayingRoleInfo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/identity-and-access/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/routes/api.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,10 +28,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="257">
               <caret line="201" column="54" selection-start-line="201" selection-start-column="54" selection-end-line="201" selection-end-column="54" />
               <folding>
                 <element signature="e#40#82#0#PHP" expanded="true" />
@@ -49,15 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RoleController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="120" column="29" lean-forward="true" selection-start-line="107" selection-start-column="10" selection-end-line="127" />
+            <state relative-caret-position="191">
+              <caret line="162" column="7" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
               <folding>
                 <element signature="e#40#76#0#PHP" expanded="true" />
                 <element signature="e#218#717#0#PHP" />
                 <element signature="e#722#1225#0#PHP" />
+                <element signature="e#1236#1744#0#PHP" />
+                <element signature="e#2667#3715#0#PHP" />
+                <element signature="e#5010#6203#0#PHP" />
+                <element signature="e#6186#6227#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -116,7 +114,7 @@
         <entry file="file://$PROJECT_DIR$/identity-and-access/routes/api.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="263">
-              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="46" />
+              <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -142,11 +140,11 @@
         <option value="$PROJECT_DIR$/identity-and-access/resources/views/mails/invitation-registration-temp.blade.php" />
         <option value="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/InvitedUser.php" />
         <option value="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/User.php" />
-        <option value="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php" />
         <option value="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php" />
         <option value="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php" />
-        <option value="$PROJECT_DIR$/identity-and-access/routes/api.php" />
         <option value="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/routes/api.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php" />
       </list>
     </option>
   </component>
@@ -204,7 +202,7 @@
     <option name="x" value="-1808" />
     <option name="y" value="55" />
     <option name="width" value="1858" />
-    <option name="height" value="754" />
+    <option name="height" value="967" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -228,30 +226,6 @@
               <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
               <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
-              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
-              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
-              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
-              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
-              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
-              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-              <item name="Identity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
@@ -320,18 +294,18 @@
       <workItem from="1524222947597" duration="1000" />
       <workItem from="1524223007802" duration="21786000" />
       <workItem from="1526283378207" duration="672000" />
-      <workItem from="1526297782446" duration="8756000" />
+      <workItem from="1526297782446" duration="12307000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31629000" />
+    <option name="totallyTimeSpent" value="35180000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1808" y="55" width="1858" height="754" extended-state="0" />
+    <frame x="-1808" y="55" width="1858" height="967" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19163953" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20412596" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -340,7 +314,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32963374" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36130536" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -534,18 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="120" column="29" lean-forward="true" selection-start-line="107" selection-start-column="10" selection-end-line="127" />
-          <folding>
-            <element signature="e#40#76#0#PHP" expanded="true" />
-            <element signature="e#218#717#0#PHP" />
-            <element signature="e#722#1225#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -564,22 +526,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/identity-and-access/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
+        <state relative-caret-position="257">
           <caret line="201" column="54" selection-start-line="201" selection-start-column="54" selection-end-line="201" selection-end-column="54" />
           <folding>
             <element signature="e#40#82#0#PHP" expanded="true" />
             <element signature="e#461#1409#0#PHP" />
             <element signature="e#1414#3383#0#PHP" />
             <element signature="e#3388#4657#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="30" column="10" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="162" column="7" selection-start-line="162" selection-start-column="7" selection-end-line="162" selection-end-column="7" />
+          <folding>
+            <element signature="e#40#76#0#PHP" expanded="true" />
+            <element signature="e#218#717#0#PHP" />
+            <element signature="e#722#1225#0#PHP" />
+            <element signature="e#1236#1744#0#PHP" />
+            <element signature="e#2667#3715#0#PHP" />
+            <element signature="e#5010#6203#0#PHP" />
+            <element signature="e#6186#6227#0#PHP" />
           </folding>
         </state>
       </provider>

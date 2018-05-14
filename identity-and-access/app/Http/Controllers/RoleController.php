@@ -13,7 +13,6 @@ use Webpatser\Uuid\Uuid;
 class RoleController extends Controller
 {
 
-
     public function createNewRole(Request $request){
 
         $roleToRegisterJsonString = file_get_contents('php://input');
@@ -87,23 +86,48 @@ class RoleController extends Controller
         $usersPlayingRoleJsonString = file_get_contents('php://input');
         $userPlayingRoleArray =  json_decode($usersPlayingRoleJsonString, true);
 
-        //Verify User exists
+        //Verify User and Role exist
 
         $roleArray = Role::where('roleid', '=', $userPlayingRoleArray['roleid'])->get();
         $userArray = User::where('userid', '=', $userPlayingRoleArray['usertoplayrole'])->get();
 
         if(count($roleArray) === 1 && count($userArray) === 1){
 
-            //Get current groups
+            //Get current users playing this role
             $currentRoleUsers = json_decode($roleArray[0]->usersplayingrole);
+            $currentRoleGroups = json_decode($roleArray[0]->groupsplayingrole);
 
-            //Verify group to add is not already in the list
+
+
+            //Verify user to add is not already in the list of the users playing role
             for($i=0; $i<count($currentRoleUsers);$i++){
 
-                if($currentRoleUsers[$i] === $userArray[0]->groupid){
-                    return "group already playing role!";
+                if($currentRoleUsers[$i] === $userArray[0]->userid){
+                    return "User already playing role!";
                 }
             }
+
+            //Verify user to add is not already one of the groups playing the role
+            for($j=0; $j<count($currentRoleGroups);$j++){
+
+
+                $aGroupPlayingTheRole = Group::where('groupid','=',$currentRoleGroups[$i])->get();
+
+
+                $aGroupPlayingTheRoleArray = json_decode($aGroupPlayingTheRole[0]->members);
+
+                //return $aGroupPlayingTheRoleArray;
+
+                for($k=0; count($aGroupPlayingTheRoleArray); $k++){
+
+                    if($aGroupPlayingTheRoleArray[$k] === $userArray[0]->userid){
+
+                        return "User already in a group playing role!";
+
+                    }
+                }
+            }
+
 
             $newRoleUsers = [];
 
@@ -133,6 +157,57 @@ class RoleController extends Controller
         }
 
         //return $groupPlayingRoleArray['grouptoplayroleid'];
+    }
+    public function isUserInRole(Request $request, $roleid, $userid){
+
+
+        //Verify User and Role exist
+
+        $roleArray = Role::where('roleid', '=', $roleid)->get();
+        $userArray = User::where('userid', '=', $userid)->get();
+
+        if(count($roleArray) === 1 && count($userArray) === 1){
+
+            //Get current users playing this role
+            $currentRoleUsers = json_decode($roleArray[0]->usersplayingrole);
+            $currentRoleGroups = json_decode($roleArray[0]->groupsplayingrole);
+
+
+            //Verify user is present in users playing role
+            for($i=0; $i<count($currentRoleUsers);$i++){
+
+                if($currentRoleUsers[$i] === $userArray[0]->userid){
+
+                    return true;
+                }
+            }
+
+            //Verify user to add is not already one of the groups playing the role
+            for($j=0; $j<count($currentRoleGroups);$j++){
+
+
+                $aGroupPlayingTheRole = Group::where('groupid','=',$currentRoleGroups[$i])->get();
+
+
+                $aGroupPlayingTheRoleArray = json_decode($aGroupPlayingTheRole[0]->members);
+
+                //return $aGroupPlayingTheRoleArray;
+
+                for($k=0; count($aGroupPlayingTheRoleArray); $k++){
+
+                    if($aGroupPlayingTheRoleArray[$k] === $userArray[0]->userid){
+
+                        return true;
+
+                    }
+                }
+            }
+        }
+        else{
+            return false;
+        }
+
+        return false;
     }
 
 }

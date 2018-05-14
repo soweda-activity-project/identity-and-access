@@ -28,6 +28,9 @@ Route::post('/users/{username}/change-password', 'UserController@changePassword'
 Route::post('/roles', 'RoleController@createNewRole');
 Route::post('/roles/{roleid}/groups-playing-role', 'RoleController@addGroupToRole');
 Route::post('/roles/{roleid}/users-playing-role', 'RoleController@addUserToRole');
+Route::get('/roles/{roleid}/is-user-in-role/{userid}', 'RoleController@isUserInRole');
+
+
 
 
 Route::post('/groups', 'GroupController@createNewGroup');
