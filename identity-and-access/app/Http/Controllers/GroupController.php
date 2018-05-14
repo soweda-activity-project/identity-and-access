@@ -12,31 +12,14 @@ use App\Domain\Model\Identity\User;
 class GroupController extends Controller
 {
 
-    ///helper functions
 
-
-    public function groupmember($group, $userorgroup, $membertype)
-    {
-
-        if($membertype === 'user'){
-            return new GroupMember($group->groupid, $userorgroup->userid, $userorgroup->firstname.' '.$userorgroup->lastname, 'USER');
-        }
-        elseif ($membertype === 'group'){
-
-            return new GroupMember($group->groupid, $userorgroup->groupid, $userorgroup->name, 'GROUP');
-
-        }
-    }
     public function createNewGroup(Request $request){
 
         $groupToRegisterJsonString = file_get_contents('php://input');
         $groupToRegisterArray =  json_decode($groupToRegisterJsonString, true);
 
-        //return $groupToRegisterArray;
+        $groupToRegister = new Group(Uuid::generate()->string, $groupToRegisterArray['name'], $groupToRegisterArray['description'],"[]");
 
-        $groupToRegister = new Group(Uuid::generate()->string, $groupToRegisterArray['name'], $groupToRegisterArray['description']);
-
-        //return $groupToRegister->groupid.' '.$groupToRegister->name.' '.$groupToRegister->description;
 
         $groupToRegister->save();
     }
@@ -45,50 +28,74 @@ class GroupController extends Controller
 
         $groupToMemberToJsonString = file_get_contents('php://input');
         $groupToMemberToArray =  json_decode($groupToMemberToJsonString, true);
-        $userorgroupid = $groupToMemberToArray['$userorgroupid'];
-        $membertype = $groupToMemberToArray['membertype'];
+        $userid = $groupToMemberToArray['$userid'];
 
 
-
-        //return $groupToMemberToArray;
-
+        //return $userid;
         //Get the user or Get the group
 
-        $ausertoadd = [];
-        $agrouptoadd = [];
 
 
-        if($membertype === 'user'){
-            $ausertoadd = User::where('userid', '=', $userorgroupid)->get();
-        }elseif($membertype === 'group'){
-            $agrouptoadd = Group::where('groupid', '=', $userorgroupid)->get();
-        }else{
-            return 'check the membertype!';
-        }
+        $ausertoadd = User::where('userid', '=', $userid)->get();
+
+        //return $ausertoadd[0];
+
+        //Get the group we are adding the user to
+        $agrouptoaddto = Group::where('groupid', '=', $groupid)->get();
 
 
-        $agrouptoaddTo = Group::where('groupid', '=', $groupid)->get();
 
-        //return count($ausertoadd).PHP_EOL. count($agrouptoaddTo).PHP_EOL.$agrouptoadd;
 
-        if (count($ausertoadd) === 1 && count($agrouptoaddTo) === 1 && count($agrouptoadd) === 0) {
+        if (count($ausertoadd) === 1 && count($agrouptoaddto) === 1 ) {
 
-            $groupmenber = $this->groupmember($agrouptoaddTo[0], $ausertoadd[0], $membertype);
+            //Get current groups members
+            $currentgroupmembers = json_decode($agrouptoaddto[0]->members);
 
-            $groupmenber->save();
 
-        } elseif (count($agrouptoadd) === 1 && count($agrouptoaddTo) === 1 && count($ausertoadd) === 0){
 
-            $groupmenber = $this->groupmember($agrouptoaddTo[0], $agrouptoadd[0], $membertype);
+            //Verify user to add is not already in the list
+            for($i=0; $i<count($currentgroupmembers);$i++){
 
-            $groupmenber->save();
+                if($currentgroupmembers[$i] === $ausertoadd[0]->userid){
+                    return "user already a member!";
+                }
+            }
+
+
+            $newgroupmembers = [];
+
+            //Add new member to the list
+
+
+
+            array_push($newgroupmembers, $ausertoadd[0]->userid);
+
+            //Add previous elts
+            for($i=0; $i<count($currentgroupmembers);$i++){
+
+                array_push($newgroupmembers, $currentgroupmembers[$i]);
+
+            }
+
+            //Update Group member list
+            $agrouptoaddto[0]->members = json_encode($newgroupmembers);
+
+            //return $agrouptoaddto[0]->members;
+
+
+            $agrouptoaddto[0]->save();
+
+            return $agrouptoaddto[0]->members;
+
+
+
         }
         else{
-            return 'mutiple instances found';
+
+            return "wrong state!";
 
         }
 
-        return $groupmenber;
 
     }
 

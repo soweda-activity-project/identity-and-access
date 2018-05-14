@@ -22,8 +22,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::post('/users-invitations', 'UserController@inviteUserToRegister');
 Route::post('/users/{inviteduserid}/registration-invitations', 'UserController@registerIvitedUser');
 Route::post('/users/{username}/login', 'UserController@login');
+Route::post('/users/{username}/change-password', 'UserController@changePassword');
+
 
 Route::post('/roles', 'RoleController@createNewRole');
+Route::post('/roles/{roleid}/groups-playing-role', 'RoleController@addGroupToRole');
+Route::post('/roles/{roleid}/users-playing-role', 'RoleController@addUserToRole');
 
 
 Route::post('/groups', 'GroupController@createNewGroup');

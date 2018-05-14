@@ -161,4 +161,51 @@ class UserController extends Controller
         }
 
     }
+    public  function changePassword(Request $request, $username){
+
+        $loginInfoJsonString = file_get_contents('php://input');
+        $loginInfoArray =  json_decode($loginInfoJsonString, true);
+
+        $username = $loginInfoArray['username'];
+        $oldpassword = $loginInfoArray['oldpassword'];
+        $newpassword = $loginInfoArray['newpassword'];
+
+
+        //retrieve user with given username
+        $userWithUsernameArray = User::where('username', '=', $username)->get();
+
+        if(count($userWithUsernameArray) === 1){
+
+            $userWithUsername = $userWithUsernameArray[0];
+        }
+        else{
+
+            return "multiple users were returned!";
+        }
+        //Check the user is enabled
+
+        if(!($userWithUsername->enablement)){
+
+            return "useris disabled!";
+        }
+
+
+        //check the given password matches
+        if (Hash::check($oldpassword, $userWithUsername->password))
+        {
+
+            $userWithUsernameArray[0]->password = bcrypt($newpassword);
+
+            $userWithUsernameArray[0]->save();
+
+
+            //Send notification of password changed???
+
+            return $userWithUsernameArray[0]->password;
+        }
+        else{
+            return "Bad credentials";
+        }
+
+    }
 }

@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="cf6fd1cc-a9cb-4cb8-9244-191dbc23103f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/GroupMember.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/GroupPlayingRoleInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Role.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/UserPlayingRoleInfo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/identity-and-access/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/identity-and-access/routes/api.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/indentity-and-access/composer.json</pharConfigPath>
+    <executablePath>composer</executablePath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="201" column="54" selection-start-line="201" selection-start-column="54" selection-end-line="201" selection-end-column="54" />
+              <folding>
+                <element signature="e#40#82#0#PHP" expanded="true" />
+                <element signature="e#461#1409#0#PHP" />
+                <element signature="e#1414#3383#0#PHP" />
+                <element signature="e#3388#4657#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="120" column="29" lean-forward="true" selection-start-line="107" selection-start-column="10" selection-end-line="127" />
+              <folding>
+                <element signature="e#40#76#0#PHP" expanded="true" />
+                <element signature="e#218#717#0#PHP" />
+                <element signature="e#722#1225#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Group.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+              <folding>
+                <element signature="e#706#1229#0#PHP" />
+                <element signature="e#656#1375#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Role.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Role.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="12" column="70" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="115" selection-start-line="12" selection-start-column="115" selection-end-line="12" selection-end-column="115" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/app/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="18" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/identity-and-access/routes/api.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>message</find>
+      <find>grouptoplayrole</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/identity-and-access/app/Access/Role.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/composer.json" />
+        <option value="$PROJECT_DIR$/identity-and-access/.env" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Mail/MailNotificator.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/resources/views/mails/invitation-registration-temp.blade.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/InvitedUser.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/User.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/routes/api.php" />
+        <option value="$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/identity-and-access/package.json" />
+    </packageJsonPaths>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/composer" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/indentity-and-access/vendor/monolog/monolog" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1808" />
+    <option name="y" value="55" />
+    <option name="width" value="1858" />
+    <option name="height" value="754" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Identity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="identity-and-access" type="b2602c69:ProjectViewProjectNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="identity-and-access" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\felic\Documents\apps-code\business\soweda\identity-and-access\identity-and-access\app\Domain\Model\Identity" />
+      <recent name="C:\Users\felic\Documents\apps-code\business\soweda\identity-and-access\identity-and-access\app\Domain\Model\Access" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\felic\Documents\apps-code\business\soweda\identity-and-access\identity-and-access\resources\views\mails" />
+      <recent name="C:\Users\felic\Documents\apps-code\business\soweda\identity-and-access\identity-and-access\app\Mail" />
+      <recent name="C:\Users\felic\Documents\apps-code\business\soweda\identity-and-access\identity-and-access\app\Domain\Model\Identity\GroupMemberType" />
+      <recent name="C:\Users\felic\Documents\apps-code\business\soweda\identity-and-access\identity-and-access\app\Domain" />
+      <recent name="C:\Users\felic\Documents\apps-code\business\soweda\identity-and-access\identity-and-access\app\Identity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cf6fd1cc-a9cb-4cb8-9244-191dbc23103f" name="Default" comment="" />
+      <created>1524221519862</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1524221519862</updated>
+      <workItem from="1524221521344" duration="414000" />
+      <workItem from="1524222947597" duration="1000" />
+      <workItem from="1524223007802" duration="21786000" />
+      <workItem from="1526283378207" duration="672000" />
+      <workItem from="1526297782446" duration="8756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="31629000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1808" y="55" width="1858" height="754" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19163953" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32963374" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/identity-and-access/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="66" column="9" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+          <folding>
+            <element signature="e#40#82#0#PHP" expanded="true" />
+            <element signature="e#461#1409#0#PHP" />
+            <element signature="e#1414#3383#0#PHP" />
+            <element signature="e#3388#4657#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/InvitedUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="115" selection-start-line="12" selection-start-column="115" selection-end-line="12" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/InvitedUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="115" selection-start-line="12" selection-start-column="115" selection-end-line="12" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+          <folding>
+            <element signature="e#40#82#0#PHP" expanded="true" />
+            <element signature="e#461#1409#0#PHP" />
+            <element signature="e#1414#3383#0#PHP" />
+            <element signature="e#3388#4657#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Access/Role.php" />
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/GroupMemberType/Group.php" />
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/DomainRegistry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/config/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/resources/views/mails/invitation-registration-temp.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Mail/MailNotificator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#28#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/GroupMember.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/InvitedUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/GroupPlayingRoleInfo.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="70" selection-start-line="12" selection-start-column="61" selection-end-line="12" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="62" selection-start-line="12" selection-start-column="62" selection-end-line="12" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/RoleController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="120" column="29" lean-forward="true" selection-start-line="107" selection-start-column="10" selection-end-line="127" />
+          <folding>
+            <element signature="e#40#76#0#PHP" expanded="true" />
+            <element signature="e#218#717#0#PHP" />
+            <element signature="e#722#1225#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Domain/Model/Identity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="115" selection-start-line="12" selection-start-column="115" selection-end-line="12" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/GroupController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="99" column="5" lean-forward="true" selection-start-line="99" selection-start-column="5" selection-end-line="99" selection-end-column="5" />
+          <folding>
+            <element signature="e#706#1229#0#PHP" />
+            <element signature="e#656#1375#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="24" column="43" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/identity-and-access/app/Http/Controllers/UserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="201" column="54" selection-start-line="201" selection-start-column="54" selection-end-line="201" selection-end-column="54" />
+          <folding>
+            <element signature="e#40#82#0#PHP" expanded="true" />
+            <element signature="e#461#1409#0#PHP" />
+            <element signature="e#1414#3383#0#PHP" />
+            <element signature="e#3388#4657#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

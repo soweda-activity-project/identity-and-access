@@ -10,21 +10,18 @@ class Group extends Model
 
 
     protected $table = 'groups';
-    protected $fillable = ['groupid', 'name', 'description'];
+    protected $fillable = ['groupid', 'name', 'description', 'members'];
 
 
 
-    public function __construct($groupid = null, $name =null, $description = null, $attributes = array())
+    public function __construct($groupid = null, $name =null, $description = null, $groupmembers = null, $attributes = array())
     {
         parent::__construct($attributes);
         $this->groupid = $groupid;
         $this->description = $description;
         $this->name = $name;
+        $this->groupmembers = $groupmembers;
 
     }
 
-    public function members()
-    {
-        return $this->hasMany('App\Domain\Model\Identity\GroupMember');
-    }
 }
